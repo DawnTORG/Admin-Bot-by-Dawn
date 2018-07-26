@@ -5,7 +5,7 @@
 "main": "adminbot.js",
 "scripts": {
   "start": "node adminbot.js"
-  }
+  },
   "dependencies": {
      "discord.js": "11.1.0",
      }
