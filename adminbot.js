@@ -20,16 +20,16 @@ client.on('message', message => {
 		   mention.send ('```css\nHey! Der User ```' + message.author + '```css\n braucht einen Admin. Hier ist das Problem: ```\n' + mentionMessage);
 		   message.author.send ('```css\nHallo! Deine Adminanfrage wird so schnell wie möglich bearbeitet. Viel Spaß noch auf dem Server!```' + 
 		   '```css\nDas ist das Problem welches du geschrieben hast:```\n' + mentionMessage);
-           message.reply('```css\n' + 'Ich habe dir Infos zu deiner Adminanfrage Privat geschrieben.' + '```');
+                   message.reply('```css\n' + 'Ich habe dir Infos zu deiner Adminanfrage Privat geschrieben.' + '```');
 		   console.log("Es wurde folgende Meldung von dem Spieler " + message.author + " gesendet: " + mentionMessage + " \n Die meldung ging an den Admin " + mention)
 		   
 	}
 		   //!help 
     else if(message.content.toLowerCase() === prefix + 'help'){
-		message.delete();
-		message.author.send('```css\n' + 
-		'Du kannst einen Admin über ein Problem das du hast informieren durch das eingeben von: !admin (der Gewünschte Admin) (der Grund)\nAussehen muss das zum Beispiel so: !admin @Dawn Test'		
-		                           + '```');
+            message.delete();
+	    message.author.send('```css\n' + 
+       	    'Du kannst einen Admin über ein Problem das du hast informieren durch das eingeben von: !admin (der Gewünschte Admin) (der Grund)\nAussehen muss das zum Beispiel so: !admin @Dawn Test'		
+	    + '```');
 								   console.log("\n\nEs wurde die Help-liste Aufgerufen")
 	}
 
