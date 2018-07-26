@@ -1,12 +1,12 @@
 {
 "name": "Test"
-"description": "Test",
+"description" : "Test",
 "version": "0.0.0",
 "main": "adminbot.js",
 "scripts": {
   "start": "node adminbot.js"
   }
   "dependencies": {
-     "discord.js": "11.1.0",
+     "discord.js" : "11.1.0",
      }
   }
