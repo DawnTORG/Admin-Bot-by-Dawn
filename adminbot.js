@@ -13,11 +13,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
 	
-	if(message.author.bot) return;
-	
 	mention = message.mentions.users.first();
 	//Die ausgabe an Admin und User
-	if(message.content.startsWith(prefix + "admin")){
+	if(message.content.startsWith(prefix + "admin")){ 	if(message.author.bot) return;
 	   if (mention == null) { return; }
            message.delete();
 		   mentionMessage = message.content.slice (6);
